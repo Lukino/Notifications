@@ -1,0 +1,26 @@
+{
+  "name": "Notifications",
+  "description": "Notifications system",
+  "main": "./bin/www",
+  "authors": [
+    "Luka Grdzelishvili <lukaka77@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://notifications-system.herokuapp.com/",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~3.0.0",
+    "toastr": "~2.0.2",
+    "angular": "~1.2.16",
+    "angular-resource": "~1.2.16",
+    "angular-route": "~1.2.16",
+    "bootstrap": "~3.1.1"
+  }
+}
