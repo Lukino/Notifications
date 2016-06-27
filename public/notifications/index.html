@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="notificationsModule">
+<head>
+    <meta charset="utf-8"/>
+    <title ng-bind-template="{{title}}"></title>
+    <link id="favicon" ng-href="{{favicon}}" rel="shortcut icon" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+    <navbar></navbar>
+    <jumbotron></jumbotron>
+    <div id="body-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container-fluid" ng-view></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/vendor/jquery/dist/jquery.js"></script>
+    <script src="/vendor/lodash/lodash.js"></script>
+    <script src="/vendor/socket.io-client/socket.io.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="/vendor/angular-route/angular-route.min.js"></script>
+    <script src="/vendor/angular-resource/angular-resource.min.js"></script>
+    <script src="/vendor/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/vendor/angular-animate/angular-animate.js"></script>
+
+    <script src="/notifications/index.js"></script>
+
+<script>
+    if (window.location.hash == "") {
+        window.location.hash = '#/';
+    }
+</script>
+
+</body>
+</html>

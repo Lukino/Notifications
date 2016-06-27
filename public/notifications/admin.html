@@ -1,0 +1,31 @@
+<div class="container" ng-controller="adminController">
+    <form novalidate class="simple-form">
+        <div class="input-group" style="padding-bottom: 0.5em;">
+            <input type="text" class="form-control" ng-model="notification.title" placeholder="Notification Title" aria-describedby="sizing-addon2"
+                   style="width: 30em;">
+        </div>
+        <div class="input-group" style="padding-bottom: 0.5em;">
+            <textarea type="text" multiline="true" ng-model="notification.text" rows="3" class="form-control" placeholder="Notification Text"
+                   aria-describedby="sizing-addon2" style="width: 30em;"></textarea>
+        </div>
+        <div class="input-group" style="padding-bottom: 0.5em;">
+            <input type="text" class="form-control" ng-model="notification.img" placeholder="Image url" aria-describedby="sizing-addon2"
+                   style="width: 30em;">
+        </div>
+        <div class="input-group" style="padding-bottom: 0.5em;" style="width: 30em;">
+            <select ng-model="notification.type">
+                <option value="it">IT</option>
+                <option value="auto">Auto</option>
+                <option value="winter">Winter</option>
+            </select>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-danger" ng-click="clear()" style="margin-right: 0.5em;">Clear</button>
+            <button type="button" class="btn btn-primary" ng-click="save(notification)">Save</button>
+        </div>
+        <!--Name: <input type="text" ng-model="user.name" /><br />-->
+        <!--E-mail: <input type="email" ng-model="user.email" /><br />-->
+        <!--<input type="button" ng-click="reset()" value="Reset" />-->
+        <!--<input type="submit" ng-click="update(user)" value="Save" />-->
+    </form>
+</div>

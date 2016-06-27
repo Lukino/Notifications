@@ -1,0 +1,12 @@
+body {
+    padding-top: 70px;
+    min-width: 768px;
+}
+
+.jumbotron {
+    padding: 10px 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
