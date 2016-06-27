@@ -43,7 +43,7 @@ angular.module('notificationsModule', [
     .run(['$rootScope',
         function ($rootScope) {
             $rootScope.title = 'Notifications System';
-            $rootScope.favicon = '/img/favicon.png';
+            $rootScope.favicon = '/favicon.png';
 
             $rootScope.notificationsList = [];
         }])
